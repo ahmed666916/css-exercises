@@ -6,8 +6,6 @@ html {
 
 .container {
   display: grid;
-  grid-template-columns: [start sidebar-start] 3fr [sidebar-end content-start] 5fr [content-end ads-start] 3fr [end ads-end];
-  grid-template-rows: [start header-start] auto [header-end content-start] auto [content-end footer-start] auto [end footer-end];
   text-align: center;
   height: 100%;
   padding: 16px;
@@ -24,32 +22,22 @@ html {
 }
 
 .header {
-  grid-column: start / end;
-  grid-row: start / header-end;
   background-color: #006157;
 }
 
 .sidebar {
-  grid-column: start / end;
-  grid-row: header-end / sidebar-end;
   background-color: #005B94;
 }
 
 .nav {
-  grid-column: header-end / nav-end;
-  grid-row: start / header-end;
   background-color: #642cde;
 }
 
 .article {
-  grid-column: sidebar-end / article-end;
-  grid-row: header-end / footer-start;
   background-color: #7E1DC3;
 }
 
 .footer {
-  grid-column: start / end;
-  grid-row: footer-start / footer-end;
   background-color: #393f4d;
 }
 
