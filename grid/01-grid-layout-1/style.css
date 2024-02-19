@@ -8,6 +8,7 @@ html {
   display: grid;
   grid-template-areas: "header header" "sidebar nav" "sidebar nav" "sidebar article" "sidebar article" "footer footer";
   grid-gap: 20px;
+  justify-content: center;
   text-align: center;
   height: 100%;
   padding: 16px;
