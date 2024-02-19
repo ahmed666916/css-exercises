@@ -6,7 +6,7 @@ html {
 
 .container {
   display: grid;
-  grid-template-areas: "header header" "sidebar article" "sidebar article";
+  grid-template-areas: "header header" "sidebar nav" "sidebar nav" "sidebar article" "sidebar article" "footer footer";
   grid-gap: 20px;
   text-align: center;
   height: 100%;
@@ -34,6 +34,7 @@ html {
 }
 
 .nav {
+  grid-area: nav;
   background-color: #642cde;
 }
 
@@ -43,6 +44,7 @@ html {
 }
 
 .footer {
+  grid-area: footer;
   background-color: #393f4d;
 }
 
