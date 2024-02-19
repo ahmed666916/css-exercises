@@ -6,6 +6,7 @@ html {
 
 .container {
   display: grid;
+  grid-template-areas: "header header" "sidebar article" "sidebar article";
   text-align: center;
   height: 100%;
   padding: 16px;
@@ -22,6 +23,7 @@ html {
 }
 
 .header {
+  grid-area: header;
   background-color: #006157;
 }
 
