@@ -28,6 +28,7 @@ html {
 }
 
 .sidebar {
+  grid-area: sidebar;
   background-color: #005B94;
 }
 
@@ -36,6 +37,7 @@ html {
 }
 
 .article {
+  grid-area: article;
   background-color: #7E1DC3;
 }
 
