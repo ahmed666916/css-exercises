@@ -30,15 +30,19 @@ html {
 }
 
 .sidebar {
+  grid-column: start / end;
+  grid-row: header-end / sidebar-end;
   background-color: #005B94;
 }
 
 .nav {
+  grid-column: header-end / nav-end;
+  grid-row: start / header-end;
   background-color: #642cde;
 }
 
 .article {
-  grid-column: start / sidebar-end;
+  grid-column: sidebar-end / article-end;
   grid-row: header-end / footer-start;
   background-color: #7E1DC3;
 }
