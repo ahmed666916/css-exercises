@@ -6,8 +6,8 @@ html {
 
 .container {
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto auto auto auto;
+  grid-template-columns: [start sidebar-start] 3fr [sidebar-end content-start] 5fr [content-end ads-start] 3fr [end ads-end];
+  grid-template-rows: [start header-start] auto [header-end content-start] auto [content-end footer-start] auto [end footer-end];
   text-align: center;
   height: 100%;
   padding: 16px;
@@ -24,6 +24,8 @@ html {
 }
 
 .header {
+  grid-column: start / end;
+  grid-row: start / header-end;
   background-color: #006157;
 }
 
@@ -36,10 +38,14 @@ html {
 }
 
 .article {
+  grid-column: start / sidebar-end;
+  grid-row: header-end / footer-start;
   background-color: #7E1DC3;
 }
 
 .footer {
+  grid-column: start / end;
+  grid-row: footer-start / footer-end;
   background-color: #393f4d;
 }
 
